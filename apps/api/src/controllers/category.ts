@@ -27,7 +27,6 @@ const getCategoryById = async (req, res) => {
       // Note: Remember that json method doesn't interrupt the workflow
       // therefore is important to add a "return" to break the process
     }
-
     // Return the category with a 200 status code
     res.status(200).json(category);
   } catch (error) {

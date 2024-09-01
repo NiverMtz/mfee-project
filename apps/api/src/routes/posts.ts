@@ -9,19 +9,19 @@ router.get('/', postController.getAllPosts);
 // Get post by category
 router.get('/category/:category', postController.getPostByCategory);
 
-// Get post by id
+// // Get post by id
 router.get('/:id', postController.getPostById);
 
-// Create post
+// // Create post
 router.post('/', postController.createPost);
 
-// Create post comment
+// // Create post comment
 router.post('/:id/comments', postController.createPostComment);
 
-// Update post
+// // Update post
 router.patch('/:id', postController.updatePost);
 
-// Delete post
+// // Delete post
 router.delete('/:id', postController.deletePost);
 
 export default router;
